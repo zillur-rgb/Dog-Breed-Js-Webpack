@@ -1,9 +1,21 @@
 const panels = (() => {
   let header = document.createElement("header");
-  header.classList.add("panel");
+  let nav = document.createElement("nav");
+  let links = document.createElement("a");
+  let body = document.querySelector("body");
 
   const appendHeader = () => {
-    console.log("header");
+    header.classList.add("panel");
+    body.prepend(header);
+
+    document.querySelector("header").append(nav);
+    document.querySelector("nav").append(links);
+    document.querySelector("nav a").setAttribute("href", "./index.html");
+    links.textContent = "Home";
+    document.querySelector("nav").append(links.cloneNode());
+    document.querySelector("nav a:last-child").textContent = "Dogs";
+    document.querySelector("nav").append(links.cloneNode());
+    document.querySelector("nav a:last-child").textContent = "Contact";
   };
 
   const appendFooter = () => {
@@ -14,7 +26,6 @@ const panels = (() => {
     appendHeader,
     appendFooter,
   };
-  let nav = document.createElement("nav");
 })();
 
 export default function appendPanels() {
