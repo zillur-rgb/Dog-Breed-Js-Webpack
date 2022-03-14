@@ -10,11 +10,13 @@ const panels = (() => {
 
     document.querySelector("header").append(nav);
     document.querySelector("nav").append(links);
-    document.querySelector("nav a").setAttribute("href", "./index.html");
+    document.querySelector("nav a").setAttribute("id", "1");
     links.textContent = "Home";
     document.querySelector("nav").append(links.cloneNode());
     document.querySelector("nav a:last-child").textContent = "Dogs";
+    document.querySelector("nav a").setAttribute("id", "2");
     document.querySelector("nav").append(links.cloneNode());
+    document.querySelector("nav a").setAttribute("id", "3");
     document.querySelector("nav a:last-child").textContent = "Contact";
   };
 
