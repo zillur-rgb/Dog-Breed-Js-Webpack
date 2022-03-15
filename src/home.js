@@ -3,16 +3,13 @@ const appendHome = () => {
   const titleWrapper = document.createElement("div");
   const title = document.createElement("div");
   const infoWrapper = document.createElement("div");
-
   const card = document.createElement("div");
   const img = document.createElement("img");
 
   //Atributes for above
   content.setAttribute("id", "content");
-
   titleWrapper.classList.add("title-container");
   title.classList.add("title");
-
   infoWrapper.classList.add("info-container");
   card.classList.add("card", "radius");
   img.classList.add("radius");

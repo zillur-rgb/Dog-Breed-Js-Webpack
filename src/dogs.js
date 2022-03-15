@@ -7,6 +7,7 @@ const createDogsPage = (() => {
   const description = document.createElement("p");
   const dogsPageTitle = document.createElement("h1");
 
+  dogsPageTitle.setAttribute("id", "page-title");
   content.setAttribute("id", "content");
   dogsContainer.classList.add("dogs-container");
   dogsCard.classList.add("dogs-card", "radius");

@@ -6,11 +6,13 @@ import appendContact from "./contact";
 appendPanels();
 appendHome();
 // appendDogs();
-appendContact();
+// appendContact();
 
 const init = (() => {
   const removeContent = () => {
     let content = document.querySelector("#content");
+    content.remove();
+    let title = document.querySelector("#page-title");
     if (title) {
       title.remove();
     }
@@ -18,7 +20,7 @@ const init = (() => {
 
   const setEventListeners = () => {
     const home = document.querySelector("#one");
-    const menu = document.querySelector("#two");
+    const dogs = document.querySelector("#two");
     const contact = document.querySelector("#three");
 
     home.addEventListener("click", () => {
@@ -26,7 +28,12 @@ const init = (() => {
       appendHome();
     });
 
-    menu.addEventListener("click", () => {
+    dogs.addEventListener("click", () => {
+      removeContent();
+      appendDogs();
+    });
+
+    contact.addEventListener("click", () => {
       removeContent();
       appendContact();
     });

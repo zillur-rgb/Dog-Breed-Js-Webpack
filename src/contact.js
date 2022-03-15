@@ -25,7 +25,6 @@ const createContact = (() => {
   const setContactTitle = () => {
     const panel = document.querySelector(".panel");
     panel.parentNode.insertBefore(content, contactTitle.nextSibling);
-    panel.parentNode.insertBefore(contactTitle, panel.nextSibling);
     panel.parentNode.insertBefore(content, contactTitle.nextSibling);
   };
 

@@ -19,15 +19,14 @@ const panels = (() => {
     header.append(nav);
     nav.append(links);
 
-    document.querySelector("nav a").setAttribute("id", "one");
+    document.querySelector("nav a").setAttribute("id", "two");
     links.textContent = "Home";
     nav.append(links.cloneNode());
     document.querySelector("nav a:last-child").textContent = "Dogs";
-    document.querySelector("nav a").setAttribute("id", "two");
-    nav.append(links.cloneNode());
     document.querySelector("nav a").setAttribute("id", "three");
-    document.querySelector("nav a:last-child").textContent = "Contact";
     nav.append(links.cloneNode());
+    document.querySelector("nav a").setAttribute("id", "one");
+    document.querySelector("nav a:last-child").textContent = "Contact";
   };
 
   const appendFooter = () => {
