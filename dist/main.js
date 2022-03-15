@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/dogs.js":
+/*!*********************!*\
+  !*** ./src/dogs.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ appendDogs)\n/* harmony export */ });\nconst createDogsPage = (() => {\n  const content = document.createElement(\"div\");\n  const dogsContainer = document.createElement(\"div\");\n  const dogsCard = document.createElement(\"div\");\n  const img = document.createElement(\"img\");\n  const subtitle = document.createElement(\"h2\");\n  const description = document.createElement(\"p\");\n  const dogsPageTitle = document.createElement(\"h1\");\n\n  content.setAttribute(\"id\", \"content\");\n  dogsContainer.classList.add(\"dogs-container\");\n  dogsCard.classList.add(\"dogs-card\", \"radius\");\n  img.classList.add(\"radius\");\n  img.setAttribute(\"src\", \"./imgs/american-eskimo.jpg\");\n  subtitle.textContent = \"American Eskimo\";\n  description.textContent =\n    \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\";\n\n  const setDogsTitle = () => {\n    dogsPageTitle.innerHTML = `<u id='dogs-Page-title'>All Dogs</u>`;\n    const panel = document.querySelector(\".panel\");\n    panel.parentNode.insertBefore(dogsPageTitle, panel.nextSibling);\n    panel.parentNode.insertBefore(content, dogsPageTitle.nextSibling);\n  };\n\n  const displayCards = () => {\n    const panel = document.querySelector(\".panel\");\n    panel.parentNode.insertBefore(content, dogsPageTitle.nextSibling);\n    content.append(dogsContainer);\n    dogsCard.append(subtitle);\n    dogsCard.append(description);\n\n    for (let i = 0; i < 6; i++) {\n      dogsContainer.append(dogsCard.cloneNode(true));\n    }\n  };\n\n  return {\n    setDogsTitle,\n    displayCards,\n  };\n})();\n\nfunction appendDogs() {\n  createDogsPage.setDogsTitle(), createDogsPage.displayCards();\n}\n\n\n//# sourceURL=webpack://dog-breed-js-webpack/./src/dogs.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _panel_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./panel.js */ \"./src/panel.js\");\n\n\n\n(0,_panel_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n// appendHome();\n\n\n//# sourceURL=webpack://dog-breed-js-webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _panel_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./panel.js */ \"./src/panel.js\");\n/* harmony import */ var _dogs_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dogs.js */ \"./src/dogs.js\");\n\n\n\n\n(0,_panel_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n// appendHome();\n(0,_dogs_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n\n//# sourceURL=webpack://dog-breed-js-webpack/./src/index.js?");
 
 /***/ }),
 

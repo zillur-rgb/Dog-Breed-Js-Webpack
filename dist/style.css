@@ -138,6 +138,7 @@ a {
 .dogs-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(10px, 1fr));
+  margin-bottom: 20px;
 }
 
 .dogs-container .dogs-card {
@@ -152,6 +153,10 @@ a {
   padding: 50px 5%;
   background-color: #fff;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.103));
+}
+
+.dogs-container .dogs-card:hover {
+  background-color: rgb(245, 245, 245);
 }
 
 .dogs-card img {
