@@ -9,6 +9,8 @@ const createContact = (() => {
   const contactUsTitle = document.createElement("h2");
   const contactUsPara = document.createElement("p");
 
+  content.setAttribute("id", "content");
+  contactTitle.setAttribute("id", "page-title");
   contactTitle.innerHTML = `<u id='dogs-title'>Contact</u>`;
   dogsContainer.classList.add("dogs-container");
   contactCard.classList.add("contact-card", "radius");

@@ -167,7 +167,8 @@ a {
 
 .contact-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   width: 50vw;
   margin: 25px;
