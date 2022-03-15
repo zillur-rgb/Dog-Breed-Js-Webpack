@@ -27,6 +27,7 @@ const createDogsPage = (() => {
     const panel = document.querySelector(".panel");
     panel.parentNode.insertBefore(content, dogsPageTitle.nextSibling);
     content.append(dogsContainer);
+    dogsCard.append(img);
     dogsCard.append(subtitle);
     dogsCard.append(description);
 
